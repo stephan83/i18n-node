@@ -162,7 +162,7 @@ function guessLocale(request) {
             break;
           }
         }
-      });
+      };
     }
 
     i18n.setLocale(request, language);
