@@ -39,8 +39,8 @@ i18n.configure = function(opt) {
     directory = './locales';
   }
 
-  if (typeof opt.checkLanguage === 'function') {
-    checkLanguage = opt.checkLanguage;
+  if (typeof opt.getLocale === 'function') {
+    getLocale = opt.getLocale;
   }
 
   // enabled some debug output
