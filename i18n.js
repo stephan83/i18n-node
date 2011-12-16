@@ -58,7 +58,7 @@ i18n.configure = function(opt) {
 
 i18n.init = function(request, response, next) {
   if (typeof request === 'object') {
-    if(getLocale && !getLocale(request, response)) {
+    if(!getLocale || !getLocale(request, response)) {
       guessLocale(request);
     }
   }
